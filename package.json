@@ -1,0 +1,43 @@
+{
+  "name": "custom-programming-language-development-in-js",
+  "version": "1.0.0",
+  "description": "This is a learning tutorial of building a custom language with javascript",
+  "main": "evaluate.js",
+  "bin": {
+    "dropbear": "bin/dropbear"
+  },
+  "scripts": {
+    "start": "node src/repl.js",
+    "test": "jest"
+  },
+  "author": "ifeanyi.ibekie@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/generator": "^7.4.4",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "chalk": "^4.1.0",
+    "inquirer": "^7.3.3",
+    "jest": "^26.4.2",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "mock-fs": "^4.10.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testRegex": "^.+\\.test.jsx?$",
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
